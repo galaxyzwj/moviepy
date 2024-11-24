@@ -15,7 +15,8 @@ try:
 except ImportError:
     DOTENV = None
 
-FFMPEG_BINARY = os.getenv("FFMPEG_BINARY", "ffmpeg-imageio")
+#FFMPEG_BINARY = os.getenv("FFMPEG_BINARY", "ffmpeg-imageio")
+FFMPEG_BINARY = os.getenv("FFMPEG_BINARY", "ffmpeg")
 FFPLAY_BINARY = os.getenv("FFPLAY_BINARY", "auto-detect")
 
 IS_POSIX_OS = os.name == "posix"
